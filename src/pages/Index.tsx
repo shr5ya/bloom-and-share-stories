@@ -11,33 +11,103 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative pt-32 pb-20 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-8 relative">
-            {/* Floating elements */}
-            <div className="absolute top-10 left-10 text-4xl animate-bounce">💖</div>
-            <div className="absolute top-16 right-16 text-3xl animate-pulse">✨</div>
-            <div className="absolute bottom-10 left-20 text-3xl animate-bounce delay-300">🧠</div>
-            <div className="absolute bottom-16 right-10 text-4xl animate-pulse delay-500">💬</div>
-            <div className="absolute top-5 right-32 text-2xl animate-bounce delay-700">🌟</div>
+      <div className="relative pt-32 pb-20 px-4 text-center overflow-hidden">
+        <div className="max-w-6xl mx-auto relative">
+          {/* Floating elements with entrance animations */}
+          <div className="absolute inset-0 pointer-events-none">
+            {/* Top left elements */}
+            <div className="absolute top-8 left-16 text-5xl animate-[slideInLeft_1.5s_ease-out_0.5s_both] opacity-0">
+              💖
+            </div>
+            <div className="absolute top-20 left-8 text-3xl animate-[slideInLeft_1.8s_ease-out_0.8s_both] opacity-0">
+              ✨
+            </div>
+            <div className="absolute top-32 left-24 text-4xl animate-[slideInLeft_2s_ease-out_1s_both] opacity-0">
+              🌟
+            </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
-              Mental Health
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
-                Awareness
-              </span>
-            </h1>
+            {/* Top right elements */}
+            <div className="absolute top-12 right-20 text-4xl animate-[slideInRight_1.6s_ease-out_0.6s_both] opacity-0">
+              🧠
+            </div>
+            <div className="absolute top-28 right-12 text-3xl animate-[slideInRight_1.9s_ease-out_0.9s_both] opacity-0">
+              💬
+            </div>
+            <div className="absolute top-6 right-32 text-5xl animate-[slideInRight_2.2s_ease-out_1.2s_both] opacity-0">
+              🎯
+            </div>
+            
+            {/* Bottom left elements */}
+            <div className="absolute bottom-16 left-12 text-4xl animate-[slideInLeft_2.3s_ease-out_1.3s_both] opacity-0">
+              🌈
+            </div>
+            <div className="absolute bottom-32 left-28 text-3xl animate-[slideInLeft_2.1s_ease-out_1.1s_both] opacity-0">
+              ⭐
+            </div>
+            
+            {/* Bottom right elements */}
+            <div className="absolute bottom-20 right-16 text-4xl animate-[slideInRight_2.4s_ease-out_1.4s_both] opacity-0">
+              🌸
+            </div>
+            <div className="absolute bottom-8 right-28 text-3xl animate-[slideInRight_2.6s_ease-out_1.6s_both] opacity-0">
+              💫
+            </div>
+            
+            {/* Additional scattered elements */}
+            <div className="absolute top-40 left-1/4 text-2xl animate-[slideInTop_2.8s_ease-out_1.8s_both] opacity-0">
+              🦋
+            </div>
+            <div className="absolute top-48 right-1/4 text-2xl animate-[slideInTop_3s_ease-out_2s_both] opacity-0">
+              🌺
+            </div>
+            <div className="absolute bottom-40 left-1/3 text-2xl animate-[slideInBottom_2.5s_ease-out_1.5s_both] opacity-0">
+              🎈
+            </div>
+            <div className="absolute bottom-48 right-1/3 text-2xl animate-[slideInBottom_2.7s_ease-out_1.7s_both] opacity-0">
+              🌻
+            </div>
+          </div>
+
+          {/* Central content */}
+          <div className="relative z-10">
+            {/* Girl image container */}
+            <div className="mb-8 relative flex justify-center items-center">
+              <div className="relative animate-[fadeInScale_1.2s_ease-out_0.3s_both] opacity-0">
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=400&h=500&auto=format&fit=crop" 
+                  alt="Mental Health Support" 
+                  className="w-80 h-96 object-cover rounded-3xl shadow-2xl"
+                />
+                {/* Glow effect around image */}
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400/20 to-blue-400/20 blur-xl -z-10 scale-110"></div>
+              </div>
+            </div>
+            
+            {/* Main heading */}
+            <div className="animate-[slideInUp_1s_ease-out_0.8s_both] opacity-0">
+              <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+                Mental Health
+                <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+                  Awareness
+                </span>
+              </h1>
+            </div>
           </div>
           
           {/* Encouraging message bubble */}
-          <div className="bg-purple-200/60 backdrop-blur-sm rounded-2xl p-4 mb-8 max-w-xs mx-auto border border-purple-300/30">
-            <p className="text-gray-700 font-medium text-lg">You got this!</p>
+          <div className="relative z-10 animate-[bounceIn_1.2s_ease-out_1.5s_both] opacity-0">
+            <div className="bg-purple-200/60 backdrop-blur-sm rounded-2xl p-4 mb-8 max-w-xs mx-auto border border-purple-300/30">
+              <p className="text-gray-700 font-medium text-lg">You got this!</p>
+            </div>
           </div>
           
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Your mental health journey matters. Find support, connect with others, and access resources designed to help you thrive.
-          </p>
+          {/* Description */}
+          <div className="animate-[slideInUp_1s_ease-out_1.8s_both] opacity-0">
+            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Your mental health journey matters. Find support, connect with others, and access resources designed to help you thrive.
+            </p>
+          </div>
         </div>
       </div>
 
