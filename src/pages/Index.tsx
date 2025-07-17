@@ -73,7 +73,7 @@ const Index = () => {
             <div className="mb-8 relative flex justify-center items-center">
               <div className="relative animate-[fadeInScale_1.2s_ease-out_0.3s_both] opacity-0">
                 <img 
-                  src="image.png" 
+                  src="shr5ya/bloom-and-share-stories/src/pages/Index.tsx" 
                   alt="Mental Health Support" 
                   className="w-80 h-96 object-cover rounded-3xl shadow-2xl"
                 />
