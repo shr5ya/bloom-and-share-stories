@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -74,7 +73,7 @@ const Index = () => {
             <div className="mb-8 relative flex justify-center items-center">
               <div className="relative animate-[fadeInScale_1.2s_ease-out_0.3s_both] opacity-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=400&h=500&auto=format&fit=crop" 
+                  src="https://i.pinimg.com/736x/25/13/9d/25139df84da0c2370a81eec2626d0276.jpg" 
                   alt="Mental Health Support" 
                   className="w-80 h-96 object-cover rounded-3xl shadow-2xl"
                 />
