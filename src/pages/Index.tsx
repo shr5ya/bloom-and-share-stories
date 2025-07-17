@@ -72,11 +72,8 @@ const Index = () => {
             {/* Girl image container */}
             <div className="mb-8 relative flex justify-center items-center">
               <div className="relative animate-[fadeInScale_1.2s_ease-out_0.3s_both] opacity-0">
-                <img 
-                  src="shr5ya/bloom-and-share-stories/src/pages/Index.tsx" 
-                  alt="Mental Health Support" 
-                  className="w-80 h-96 object-cover rounded-3xl shadow-2xl"
-                />
+                <img src="/shr5ya/bloom-and-share-stories/image.png" alt="Mental Health Support" className="w-80 h-96 object-cover rounded-3xl shadow-2xl"/>
+
                 {/* Glow effect around image */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400/20 to-blue-400/20 blur-xl -z-10 scale-110"></div>
               </div>
