@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { MessageCircle, Users, FileText, Heart, Brain, Sparkles } from "lucide-react";
+import hero from "@/assets/hero.png";
 
 const Index = () => {
   return (
@@ -71,11 +72,11 @@ const Index = () => {
           <div className="relative z-10">
             {/* Girl image container */}
             <div className="mb-8 relative flex justify-center items-center">
-              <div className="relative animate-[fadeInScale_1.2s_ease-out_0.3s_both] opacity-0">
+              <div className="relative bg-transparent animate-[fadeInScale_1.2s_ease-out_0.3s_both] opacity-0">
                 <img 
-                  src="https://i.pinimg.com/736x/25/13/9d/25139df84da0c2370a81eec2626d0276.jpg" 
+                  src={hero} 
                   alt="Mental Health Support" 
-                  className="w-80 h-96 object-cover rounded-3xl shadow-2xl"
+                  className="w-80 h-96 object-cover rounded-full"
                 />
                 {/* Glow effect around image */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400/20 to-blue-400/20 blur-xl -z-10 scale-110"></div>
